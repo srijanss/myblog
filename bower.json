@@ -1,0 +1,25 @@
+{
+  "name": "myblog",
+  "homepage": "https://github.com/srijanss/myblog",
+  "authors": [
+    "Srijan Manandhar <srijan.manandhar@gmail.com>"
+  ],
+  "description": "my personal blog",
+  "main": "index.html",
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "bootstrap-social": "^5.0.0"
+  }
+}
