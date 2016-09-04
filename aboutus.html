@@ -59,35 +59,116 @@
 				<ol class="breadcrumb">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Archive</a></li>
-					<li class="active">About Us</li>
+					<li class="active">About</li>
 				</ol>
 			</div>
 		</div>
-		<div class="row row-content">
-			<div class="col-xs-12 col-sm-3 col-sm-push-9">
-				<h1 align="center">About Me</h1>
-			</div>
-			<div class="col-xs-12 col-sm-9 col-sm-pull-3">
-				<h3>Lorem ipsum</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-				</p>
-				<!-- <a href="#">Read More..</a> -->
-				<p style="padding: 20px;"></p>
+		<div class="row">
+			<div class="col-xs-12 col-sm-3">
+				<h1>About Me</h1>
 			</div>
 		</div>
 		<div class="row row-content">
-			<div class="col-xs-12 col-sm-3 col-sm-push-9">
-				<h1 align="center">About This Blog</h1>
-			</div>
-			<div class="col-xs-12 col-sm-9 col-sm-pull-3">
+			<div class="col-xs-12 col-sm-9">
 				<h3>Lorem ipsum</h3>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 				</p>
 				<!-- <a href="#">Read More..</a> -->
-				<p style="padding: 20px;"></p>
+				<!-- <p style="padding: 20px;"></p> -->
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-3">
+				<h1>About This Blog</h1>
+			</div>
+		</div>	
+		<div class="row row-content">
+			<div class="col-xs-12 col-sm-9">
+				<h3>Lorem ipsum</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				</p>
+				<!-- <a href="#">Read More..</a> -->
+				<!-- <p style="padding: 20px;"></p> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-primary" href="tel:+35812345678"><i class="fa fa-phone"></i> Call</a>
+                    <a type="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a type="button" class="btn btn-success" href="mailto:srijan.manandhar@gmail.com"><i class="fa fa-envelope-o"></i> Email</a>
+					<p style="padding: 20px;"></p>
+                </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>Feedback Form</h3>
+					</div>
+				</div>
+				<form class="form-horizontal" role="form">
+	                <div class="form-group">
+	                    <label for="firstname" class="col-sm-2 control-label">First Name</label>                        
+	                    <div class="col-sm-10">
+	                    	<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+	                    <div class="col-sm-10">
+	                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+                        <label for="telnum" class="col-xs-12 col-sm-2 control-label">Contact Tel.</label>
+                        <div class="col-xs-5 col-sm-4 col-md-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">(</div>
+                                    <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                                <div class="input-group-addon">)</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-sm-6 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailid" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                       <div class="checkbox col-sm-5 col-sm-offset-2">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="approve" value="">
+                                <strong>May we contact you?</strong>
+                            </label>
+                        </div>
+                        <div class="col-sm-3 col-sm-offset-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>
+                    </div>
+	            </form>
+            </div>
 		</div>
 	</div>
 	<footer class="row-footer">
