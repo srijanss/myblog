@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myblog', [])
-.controller('PostController', function(){
+.controller('PostController', ['$scope', function($scope){
 	var posts=[
 	{
 		name:'First',
@@ -32,5 +32,5 @@ angular.module('myblog', [])
 		comment:''
 	}
 	];
-	this.posts = posts;
-});
+	$scope.posts = posts;
+}]);
