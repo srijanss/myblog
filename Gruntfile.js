@@ -6,7 +6,8 @@ module.exports = function(grunt) {
 
 	// Automatically load required Grunt tasks
 	require('jit-grunt')(grunt, {
-	    useminPrepare: 'grunt-usemin'  // To inform that useminPrepare task depends upon usemin package 
+	    useminPrepare: 'grunt-usemin',  // To inform that useminPrepare task depends upon usemin package 
+	    ngAnnotate: 'grunt-ng-annotate'
     });
 
     // Define the configuration for all the tasks
@@ -174,6 +175,19 @@ connect: {
     }
   }
 },
+
+ngAnnotate: {
+	options: {
+		singlequote: true
+	},
+	dist: {
+		files: {
+			'app/scripts/app.js': 'app/scripts/app.js',
+			'app/scripts/controllers.js': 'app/scripts/controllers.js',
+			'app/scripts/services.js': 'app/scripts/services.js'
+		}
+	}
+}
     });
 
     grunt.registerTask('build', [
@@ -182,6 +196,7 @@ connect: {
         'useminPrepare',
         'concat',
         'cssmin',
+        'ngAnnotate',
         'uglify',
         'copy',
         'filerev',
