@@ -1,15 +1,27 @@
 'use strict';
 
-angular.module('myblog', ['ngRoute'])
-.config(["$routeProvider", function($routeProvider) {
-        $routeProvider
-            .when('/main', {
-                templateUrl : 'main.html',
-                controller  : 'PostController'
+angular.module('myblog', ['ui.router'])
+.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
+        $stateProvider
+                    // route for the home page
+            .state('app', {
+                url:'/',
+                views: {
+                    'content': {
+                        templateUrl : 'views/main.html',
+                        controller  : 'PostController'
+                    }
+                }
             })
-            .when('/aboutus', {
-                templateUrl : 'aboutus.html'
-            })
-            .otherwise('/main');
+                    // route for the aboutus page
+            .state('app.aboutus', {
+                url:'aboutus',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/aboutus.html'
+                   }
+                }
+            });
+            $urlRouterProvider.otherwise('/');
     }])
 ;
