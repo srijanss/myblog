@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myblog', ['ui.router'])
+angular.module('myblog', ['ui.router', 'ngResource'])
 .config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
         $stateProvider
                     // route for the home page
